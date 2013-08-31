@@ -1,12 +1,14 @@
+# ChangeIP.net DDNS Updater
+
 # ==============================================================================
-# CONFIGURATION START
+# EDIT YOUR DETAILS / CONFIGURATION HERE
 # ==============================================================================
 :local ddnsuser "changeipnetuser"
 :local ddnspass "changeipnetpass"
 :local ddnshost "changeipnethost.changeipdomain.net"
 :local ddnsiface "ether1-gateway"
 # ==============================================================================
-# CONFIGURATION END
+# END OF USER DEFINED CONFIGURATION
 # ==============================================================================
 
 :local ddnsip [ /ip address get [ /ip address find interface=$ddnsiface ] address ]
